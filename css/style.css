@@ -1,0 +1,116 @@
+body {
+    background-color: #FFFAF8;
+}
+
+/*.infinitescroll {
+    position: relative;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 28px;
+    
+    Unsure on what this does 
+    overflow: hidden;
+
+    Remove when done
+    border: 1px solid black;
+}
+
+ul.list {
+    position: relative;
+    display: inline-block;
+    list-style:none;
+}
+
+ul.list li {
+    float: left;
+    padding-left:20px;
+    font-size: 16px;
+} */
+
+#introSection {
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    /* For checking div size */
+    /* border: 1px solid black; */
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 56px;
+}
+
+#introSection p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.search-bar { 
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 600px;
+    height: 28px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 0px;
+    font-size: 20px; 
+    color: #cac7ff
+}
+
+.search-bar button img {
+    width: 25px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    background: #FFFAF8;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-left: 10px;
+}
+
+#moduleSection {
+    position: relative;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+#modules {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
