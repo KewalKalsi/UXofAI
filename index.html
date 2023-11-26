@@ -39,8 +39,53 @@
     </div>
     <div id="moduleSection">
       <p id="modules">
-        Component Designs
       </p>
+      <div class="gallery">
+        <figure class="pack">
+          <img src=
+          "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
+          alt="Component 1" class="gallery-img" onclick="showImage(src)">
+          <figcaption>Fig.1.</figcaption>
+        </figure>
+
+        <figure class = "pack">
+          <img src=
+          "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
+          alt="Component 1" class="gallery-img" onclick="showImage(src)">
+          <figcaption>Fig.1.</figcaption>
+        </figure>
+
+        <figure class = "pack">
+          <img src=
+          "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
+          alt="Component 1" class="gallery-img" onclick="showImage(src)">
+          <figcaption>Fig.1.</figcaption>
+        </figure>
+
+        </div>
+           
+          <!-- Image containter where image will show in big size -->
+              <div class="image-popup-container" id="imagePopup">
+                <span class="close-button" onclick="closeImage()">×</span>
+                <img src="" alt="Popup Image" id="popupImage">
+              </div>
+            <script src="script.js">
+              // function to show image when we click on a image
+            function showImage(imageSrc) {
+                let popupImage = document.getElementById("popupImage");
+                popupImage.src = imageSrc;
+                
+                let imagePopup = document.getElementById("imagePopup");
+                imagePopup.style.display = "block";
+                document.body.style.overflow = "hidden";
+              }
+              // function to hide the image when we click on cross button
+              function closeImage() {
+                let imagePopup = document.getElementById("imagePopup");
+                imagePopup.style.display = "none";
+              document.body.style.overflow = "auto";
+              }
+            </script>
     </div>
   </body>
 </html>
