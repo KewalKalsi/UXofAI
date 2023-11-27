@@ -35,7 +35,7 @@ ul.list li {
     left: 50%;
     transform: translateX(-50%);
     height: 200px;
-    width: 600px;
+    width: 35%;
     
     display: flex;
     flex-direction: column;
@@ -43,26 +43,36 @@ ul.list li {
     align-items: center;
     text-align: center;
 
-
     /* For checking div size */
     /* border: 1px solid black; */
 }
 
 h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 56px;
+    font-size: 64px;
+    color: rgb(60, 48, 35);
+    font-weight: bold;
 }
 
-#introSection p {
+figcaption {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    padding-top: 25px;
+    color: rgb(60, 48, 35);
+}
+
+p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    line-height: 2;
+    color: rgb(60, 48, 35);
 }
 
 .search-bar { 
     background: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(60, 48, 35);
     border-radius: 15px;
     padding: 10px 20px;
     width: 600px;
@@ -106,13 +116,14 @@ li {
     left: 50%;
     transform: translateX(-50%);
     height: 500;
-    width: 500;
-    border: 1px solid black;
+    width: 80%;
+    padding-bottom: 5%;
 }
 
 #modules {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
+    color: rgb(60, 48, 35);
     padding: 10;
     text-align: center;
 }
@@ -129,21 +140,17 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 60px;
     justify-content:center;
-    align-items: center; 
+    align-items: center;
   }
  
   /* Styling Particular Image */
   .gallery-img {
     width: 400px;
-    height: 200px;
-    cursor: pointer;
+    height: 400px;
     transition: transform 0.2s;
+    border-radius: 5px;
   }
-  /* onHover image will expand little bit */
-  .gallery-img:hover {
-    transform: scale(1.1);
-    cursor: zoom-in;
-  }
+
   /* This section will be seen when we click on image */
   .image-popup-container {
     display: none;
@@ -152,7 +159,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
   }
  
   /* close button when we want to close the bigger image */
@@ -181,3 +188,43 @@ at middle of screen */
     transform: translate(-50%, -50%);
   }
  
+  #mybutton {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid rgb(60, 48, 35);
+    padding: 10px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  #mybutton:hover {
+    border: 2px dotted rgb(60, 48, 35);
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(60, 48, 35);
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.column {
+    flex: 50%;
+    padding: 5%;
+}
+
+.heading {
+    padding: 25px;
+}

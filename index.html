@@ -12,80 +12,41 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <script src="javascript/index.js"></script>
-    <!--- <div class="infinitescroll">
-      <ul class = "list">
-        <li class="listitem"> built by designers for designers </li>
-      </ul>
-    </div> ---->
     <div id = "introSection">
       <h2> Let's design and build human-first AI </h2>
-      <p > A design toolkit for empowering the creation of innovative and scaling artificial intelligence proucts </p>
-      <form class="search-bar">
-        <button type="submit"><img src="static/search.png"></button>
-        <input type="text" class="search" placeholder="Chatbot">
-      </form> 
-      <ul>
-        <li>
-          category #1
-        </li>
-        <li>
-          category #2
-        </li>
-        <li>
-          category #3
-        </li>
-      </ul>
+      <p> A design toolkit for empowering the creation of innovative and scaling artificial intelligence proucts </p>
     </div>
     <div id="moduleSection">
       <p id="modules">
       </p>
       <div class="gallery">
         <figure class="pack">
-          <img src=
-          "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
-          alt="Component 1" class="gallery-img" onclick="showImage(src)">
-          <figcaption>Fig.1.</figcaption>
+          <img src="static/cover image-1.png"
+          alt="Preview of in-chat user feedback ui component" class="gallery-img">
+          <figcaption>In-chat User Feedback</figcaption>
+          <div id="mybutton">
+            <a class="btn" href="user-feedback.html">View Component</a>
+          </div>
         </figure>
 
         <figure class = "pack">
-          <img src=
-          "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
-          alt="Component 1" class="gallery-img" onclick="showImage(src)">
-          <figcaption>Fig.1.</figcaption>
+          <img src="static/cover image-2.png"
+          alt="Preview of ability to intervene ui component" class="gallery-img">
+          <figcaption>Ability to intervene</figcaption>
+          <div id="mybutton">
+            <a class="btn" href="intervene.html">View Component</a>
+          </div>
         </figure>
-
         <figure class = "pack">
-          <img src=
-          "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
-          alt="Component 1" class="gallery-img" onclick="showImage(src)">
-          <figcaption>Fig.1.</figcaption>
+          <img src="static/placeholder-img.png"
+          alt="Preview of ability to intervene ui component" class="gallery-img">
+          <figcaption>More components to come!</figcaption>
+          <div id="mybutton">
+            <a class="btn" href="mailto:irawo10@gmail.com">Contribute to this site</a>
+          </div>
         </figure>
 
         </div>
-           
-          <!-- Image containter where image will show in big size -->
-              <div class="image-popup-container" id="imagePopup">
-                <span class="close-button" onclick="closeImage()">×</span>
-                <img src="" alt="Popup Image" id="popupImage">
-              </div>
-            <script src="script.js">
-              // function to show image when we click on a image
-            function showImage(imageSrc) {
-                let popupImage = document.getElementById("popupImage");
-                popupImage.src = imageSrc;
-                
-                let imagePopup = document.getElementById("imagePopup");
-                imagePopup.style.display = "block";
-                document.body.style.overflow = "hidden";
-              }
-              // function to hide the image when we click on cross button
-              function closeImage() {
-                let imagePopup = document.getElementById("imagePopup");
-                imagePopup.style.display = "none";
-              document.body.style.overflow = "auto";
-              }
-            </script>
     </div>
   </body>
 </html>
