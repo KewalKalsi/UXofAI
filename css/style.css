@@ -199,6 +199,13 @@ li {
     padding: 100;
     /* margin: 60; */
 }
+
+.example-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
 /* Styling gallery section where all images are */
 .gallery {
     width: 90%;
